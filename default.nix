@@ -18,6 +18,8 @@
 
   "2048" = pkgs.callPackage ./pkgs/2048 { };
 
+  firefly = pkgs.callPackage ./pkgs/firefly { };
+
   git = pkgs.callPackage ./pkgs/git { };
 
   liboqs = pkgs.callPackage ./pkgs/liboqs { };
