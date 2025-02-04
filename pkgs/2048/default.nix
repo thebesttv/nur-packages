@@ -13,8 +13,7 @@ stdenv.mkDerivation rec {
   };
 
   installPhase = ''
-    # mkdir -p $out/bin
-    # install -m755 2048 $out/bin
-    install -m755 2048 $out
+    mkdir -p $out/bin
+    install -m755 2048 $out/bin
   '';
 }
