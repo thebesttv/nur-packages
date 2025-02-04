@@ -18,6 +18,8 @@
 
   "2048" = pkgs.callPackage ./pkgs/2048 { };
 
+  git = pkgs.callPackage ./pkgs/git { };
+
   liboqs = pkgs.callPackage ./pkgs/liboqs { };
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
