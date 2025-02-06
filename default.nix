@@ -20,6 +20,8 @@
 
   firefly = pkgs.callPackage ./pkgs/firefly { };
 
+  PonyOCR = pkgs.callPackage ./pkgs/PonyOCR { };
+
   git = pkgs.callPackage ./pkgs/git { };
 
   liboqs = pkgs.callPackage ./pkgs/liboqs { };
