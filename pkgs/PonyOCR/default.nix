@@ -42,11 +42,9 @@ stdenv.mkDerivation rec {
     done
 
     mkdir -p $out/share/dbus-1/system-services
-    cat <<END > $out/share/dbus-1/system-services/org.thebesttv.PonyOCR.service
-    [D-BUS Service]
-    Name=org.thebesttv.PonyOCR
-    Exec=$out/bin/$pname
-    END
+    cp files/org.thebesttv.PonyOCR.service $out/share/dbus-1/system-services/org.thebesttv.PonyOCR.service
+    substituteInPlace $out/share/dbus-1/system-services/org.thebesttv.PonyOCR.service \
+      --replace-fail /home/thebesttv/bin/$pname $out/bin/$pname
   '';
 
   meta = {
