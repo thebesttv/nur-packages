@@ -24,7 +24,8 @@
 
   git = pkgs.callPackage ./pkgs/git { };
 
-  liboqs = pkgs.callPackage ./pkgs/liboqs { };
+  # fails to build in GA, seems to be problem with CMake
+  # liboqs = pkgs.callPackage ./pkgs/liboqs { };
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
